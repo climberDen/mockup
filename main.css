@@ -1,4 +1,88 @@
-body{
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: "source_font_pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("source_font_pro"), local("source_font_pro-regular"),
+    url(fonts/SourceSansPro-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "source_font_pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("source_font_pro"), local("source_font_pro-bold"),
+    url(fonts/SourceSansPro-Bold.ttf) format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  text-align: center;
+}
+button{
+    cursor: pointer;
+}
+
+/* header */
+#header {
+  background-color: #fcdb00;
+  width: 100%;
+  height: 100vh;
+  font-family: "source_font_pro-regular";
+}
+.line_top_menu {
+  display: flex;
+  padding: 6em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30vh;
+}
+#top_menu {
+  background: transparent;
+  border: none;
+}
+.logo {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 0.5;
+}
+.social_button a {
+  margin-right: 2.4em;
+}
+.social_button a:last-child {
+  margin-right: 0;
+}
+.headline {
+  margin: 0 auto;
+  width: 50%;
+}
+.headline h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+.headline p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#start {
+  width: 256px;
+  height: 56px;
+  border: 2px solid #000;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+}
+#start:active {
+  outline: none;
+  border: 2px solid #000;
+}
+.arrow{
+    margin-top: 10vh;
+    font-size: 32px;
 }
