@@ -8,8 +8,7 @@ module.exports = function(grunt) {
 		less: {
 			development: {
 				files: {
-					'./assets/css/main.css': './less/main.less',
-					
+					'./assets/css/main.css': './less/main.less'
 				}
 			}
 		},
@@ -60,5 +59,5 @@ module.exports = function(grunt) {
 	/* watch */
 	// компилирует less и запускает watch. если в конфиге есть
 	// ошибки - мы узнаем об этом сразу
-	grunt.registerTask('watch-dev',['less:development','jshint','watch']);
+	grunt.registerTask('watch-dev',['less:development','watch']);
 };
