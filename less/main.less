@@ -1,3 +1,4 @@
+@import "helpers.less";
 body {
   margin: 0;
   font-family: "sourcePro";
@@ -7,11 +8,25 @@ body {
 a {
   color: #000;
 }
-button{
-    background: transparent;
-      border: none;
-      font-size: 2.2em;
+button {
+  background: transparent;
+  border: none;
+  font-size: 2.2em;
 }
+h2 {
+  margin: 0;
+  font-size: 3.2em;
+  font-weight: 700;
+}
+.sub_header {
+  font-size: @fs-sub_header;
+}
+.glyph_card {
+  float: left;
+  font-size: 5em;
+  margin: 0;
+}
+
 
 // style for header----------------
 #header {
@@ -51,47 +66,120 @@ button{
       }
     }
   }
-  .headline{
-      height: 44.4em;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h1{
-          font-size: 4.8em;
-          font-weight: 700;
-      }
-    p{
-        width: 23.75em;
-          font-size: 2em;
-          margin-bottom: 2.05em;
-      }
-      #start{
-          display: block;
-        width: 12.37em;
-        height: 2.82em;
-border: 2px solid #000000;
-text-transform: uppercase;
-font-weight: bold;
-      }
-      
+  .headline {
+    height: 44.4em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 4.8em;
+      font-weight: 700;
+    }
+    p {
+      width: 23.75em;
+      font-size: 2em;
+      margin-bottom: 2.05em;
+    }
+    #start {
+      display: block;
+      width: 12.37em;
+      height: 2.82em;
+      border: 2px solid #000000;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
-  .arrow{
+  .arrow {
     margin: 0;
     font-size: 3.2em;
-}
+  }
 }
 // ---------------------------
 // Tinyone features
 
-#tinyone_features{
-    margin: 0 auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    .row1{
-        display: flex;
-        .card{
-            display: flex;
+#tinyone_features {
+  margin: 11.6em auto 0 auto;
+  width: 91em;
+
+  .row1 {
+    margin: 9em 5em 8em 0;
+    display: flex;
+    .card {
+      width: 26.4em;
+      margin-right: 5em;
+
+      .glyph_card {
+        float: left;
+        font-size: 5em;
+        margin: 0;
+      }
+      .content_card {
+        margin-left: 6.525em;
+        h3 {
+          font-size: 2.2em;
+          margin: 0;
         }
+        p {
+          font-size: 1.6em;
+          text-align: start;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
     }
+  }
+}
+// pricing
+#pricing {
+  width: 71.4em;
+  margin: 23.4em auto 0 auto;
+  .row1 {
+    display: flex;
+    padding: 0 5em;
+    .card2 {
+      width: 16.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10em;
+      .wrap-glyph {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        background-color: #ebebeb;
+        i {
+          font-size: 4.8em;
+        }
+      }
+      h3 {
+        font-size: 2.4em;
+        font-weight: 700;
+      }
+      p{
+        font-size: 1.4em;
+        margin-bottom: 3.2em;
+      }
+      .line {
+        width: 5em;
+        border-top: 2px solid #000;
+        margin-bottom: ;
+      }
+      button{
+        /* Style for "btn-border" */
+width: 8.75em;
+height: 2.94em;
+font-size: 1.6em;
+text-transform: uppercase;
+font-weight: 700;
+border: 2px solid #000000;
+background: transparent;
+      }
+    }
+  }
 }

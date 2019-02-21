@@ -8,7 +8,8 @@ module.exports = function(grunt) {
 		less: {
 			development: {
 				files: {
-					'./assets/css/main.css': './less/main.less'
+					'./assets/css/main.css': './less/main.less',
+					'./assets/css/helpers.css':'./less/helpers.less'
 				}
 			}
 		},
