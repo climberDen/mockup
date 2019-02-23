@@ -41,10 +41,8 @@ p{
 // style for header----------------
 #header {
   width: 100%;
-  height: 86em;
   background-color: #fcdb00;
   .line_top_menu {
-    height: 4.3em;
     padding-top: 6em;
     margin: 0 auto 25.8em auto;
     display: flex;
@@ -80,7 +78,6 @@ p{
     }
   }
   .headline {
-    height: 44.4em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -95,21 +92,34 @@ p{
       margin-bottom: 2.05em;
     }
     .start {
+      position: relative;
+      cursor: pointer;
       display: block;
       width: 12.37em;
       height: 2.82em;
       border: 2px solid #000000;
+      margin-bottom: 35vh;
       text-transform: uppercase;
       font-weight: bold;
       outline: none;
       &::after{
         content: '';
-        background-image: url(../assets/img/arrow.png);
+    background-image: url(/assets/img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 35vh;
+    left: 50%;
+    transform: translateX(-50%);
 
       }
     }
   }
   .arrow {
+
     margin: 0;
     font-size: 3.2em;
   }
