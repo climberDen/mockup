@@ -18,12 +18,22 @@ h2 {
   font-weight: 700;
 }
 .sub_header {
+  font-size: 2em;
+}
+h3 {
   font-size: 2.2em;
+}
+p {
+  font-size: 1.6em;
 }
 .glyph_card {
   float: left;
   font-size: 5em;
   margin: 0;
+}
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
 }
 #header {
   width: 100%;
@@ -92,18 +102,18 @@ h2 {
 }
 #tinyone_features {
   margin: 11.6em auto 0 auto;
-  width: 91em;
+  width: 66.8%;
 }
 #tinyone_features .row1 {
-  margin: 9em 5em 8em 0;
+  margin: 9em 0 8em 0;
   display: flex;
+  flex-wrap: wrap;
 }
 #tinyone_features .row1 .card {
-  width: 26.4em;
+  width: 29%;
   margin-right: 5em;
 }
 #tinyone_features .row1 .card .glyph_card {
-  float: left;
   font-size: 5em;
   margin: 0;
 }
@@ -111,11 +121,9 @@ h2 {
   margin-left: 6.525em;
 }
 #tinyone_features .row1 .card .content_card h3 {
-  font-size: 2.2em;
   margin: 0;
 }
 #tinyone_features .row1 .card .content_card p {
-  font-size: 1.6em;
   text-align: start;
 }
 #tinyone_features .row1 .card:last-child {
@@ -123,19 +131,20 @@ h2 {
   margin-bottom: 0;
 }
 #pricing {
-  width: 71.4em;
+  width: 50.64%;
   margin: 23.4em auto 0 auto;
 }
 #pricing .row1 {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 0 5em;
 }
 #pricing .row1 .card2 {
-  width: 16.5em;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 10em;
 }
 #pricing .row1 .card2 .wrap-glyph {
   display: flex;
@@ -177,17 +186,16 @@ h2 {
   background: transparent;
 }
 #our_works {
-  width: 94.1em;
+  width: 66.8%;
   margin: 19.6em auto 0 auto;
 }
 #our_works p {
   font-size: 2em;
-  width: 35.7em;
   display: inline-block;
 }
 #our_works .row1 {
-  display: flex;
   align-items: flex-start;
+  justify-content: center;
   margin-bottom: 6.5em;
 }
 #our_works .card3 {
@@ -228,15 +236,13 @@ h2 {
 }
 #our_works .card3 h3 {
   margin-bottom: 0.55em;
-  font-size: 2.2em;
   font-weight: 700;
 }
 #our_works .card3 p {
   margin: 0;
-  font-size: 1.6em;
 }
 #our_team {
-  width: 94.1em;
+  width: 66.8%;
   margin: 26.4em auto 0 auto;
 }
 #our_team .row1 {
@@ -276,7 +282,7 @@ h2 {
 }
 #stats {
   margin: 21.5em auto 0 auto;
-  width: 71.4em;
+  width: 50.64%;
 }
 #stats .row {
   margin-top: 5.6em;
@@ -327,7 +333,7 @@ h2 {
 }
 #follow {
   margin: 21.4em auto 0 auto;
-  width: 71.4em;
+  width: 50.64%;
 }
 #follow .row {
   margin-top: 4.9em;
@@ -354,7 +360,6 @@ h2 {
 #follow .input_area {
   display: flex;
   flex-direction: column;
-  width: 48em;
   margin: 4.3em auto 0 auto;
 }
 #follow .input_area input {
@@ -392,7 +397,7 @@ h2 {
 }
 #footer .footer {
   padding-top: 9.6em;
-  width: 84.8em;
+  width: 60.14%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -404,8 +409,8 @@ h2 {
 }
 #footer .input #update {
   font-size: 1.6em;
-  width: 37.31em;
   height: 100%;
+  width: 42.34%;
   padding: 0 2em;
   border: none;
   color: #898989;
@@ -413,8 +418,8 @@ h2 {
 #footer .input #submit {
   font-size: 1.6em;
   font-weight: 700;
-  width: 8.44em;
   height: 100%;
+  width: 9.57%;
   border: none;
   text-transform: uppercase;
   color: #000000;
@@ -422,18 +427,15 @@ h2 {
 }
 #footer .footer-widjet {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #footer .footer-widjet .footer-cart {
   font-size: 1.6em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 4.75em;
-  margin-right: 5em;
-  justify-content: start;
-}
-#footer .footer-widjet .footer-cart:first-child {
-  width: 11.3em;
+  justify-content: space-between;
 }
 #footer .footer-widjet .footer-cart:last-child {
   margin: 0;

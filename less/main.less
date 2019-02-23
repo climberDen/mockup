@@ -15,16 +15,26 @@ button {
 }
 h2 {
   margin: 0;
-  font-size: 3.2em;
+  font-size: @fs-h2;
   font-weight: 700;
 }
 .sub_header {
   font-size: @fs-sub_header;
 }
+h3{
+  font-size: @fs-h3;
+}
+p{
+  font-size: @fs-p;
+}
 .glyph_card {
   float: left;
   font-size: 5em;
   margin: 0;
+}
+.row1{
+  display: flex;
+  flex-wrap: wrap;
 }
 // style for header----------------
 #header {
@@ -98,28 +108,28 @@ h2 {
 
 #tinyone_features {
   margin: 11.6em auto 0 auto;
-  width: 91em;
+  width: 66.8%;
 
   .row1 {
-    margin: 9em 5em 8em 0;
+    margin: 9em 0 8em 0;
     display: flex;
+    flex-wrap: wrap;
     .card {
-      width: 26.4em;
+      width: 29%;
       margin-right: 5em;
 
       .glyph_card {
-        float: left;
+       
         font-size: 5em;
         margin: 0;
       }
       .content_card {
         margin-left: 6.525em;
         h3 {
-          font-size: 2.2em;
+        
           margin: 0;
         }
         p {
-          font-size: 1.6em;
           text-align: start;
         }
       }
@@ -132,17 +142,18 @@ h2 {
 }
 // pricing
 #pricing {
-  width: 71.4em;
+  width: 50.64%;
   margin: 23.4em auto 0 auto;
   .row1 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 0 5em;
     .card2 {
-      width: 16.5em;
+      width: 30%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 10em;
       .wrap-glyph {
         display: flex;
         align-items: center;
@@ -187,16 +198,15 @@ h2 {
 }
 // our_works
 #our_works {
-  width: 94.1em;
+  width: 66.8%;
   margin: 19.6em auto 0 auto;
   p {
     font-size: 2em;
-    width: 35.7em;
     display: inline-block;
   }
   .row1 {
-    display: flex;
     align-items: flex-start;
+    justify-content: center;
     margin-bottom: 6.5em;
   }
   .card3 {
@@ -239,18 +249,16 @@ h2 {
     }
     h3 {
       margin-bottom: 0.55em;
-      font-size: 2.2em;
       font-weight: 700;
     }
     p {
       margin: 0;
-      font-size: 1.6em;
     }
   }
 }
 // our_team
 #our_team {
-  width: 94.1em;
+  width: 66.8%;
   margin: 26.4em auto 0 auto;
   .row1 {
     margin: 7.6em auto 0 auto;
@@ -293,7 +301,7 @@ h2 {
 // stats
 #stats {
   margin: 21.5em auto 0 auto;
-  width: 71.4em;
+  width: 50.64%;
   .row {
     margin-top: 5.6em;
     display: flex;
@@ -347,7 +355,7 @@ h2 {
 // follow
 #follow {
   margin: 21.4em auto 0 auto;
-  width: 71.4em;
+  width: 50.64%;
   .row {
     margin-top: 4.9em;
     display: flex;
@@ -373,7 +381,6 @@ h2 {
   .input_area {
     display: flex;
     flex-direction: column;
-    width: 48em;
     margin: 4.3em auto 0 auto;
     input {
       font-size: 2.4em;
@@ -412,7 +419,7 @@ h2 {
   color: #fff;
   .footer {
     padding-top: 9.6em;
-    width: 84.8em;
+    width: 60.14%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -423,8 +430,8 @@ h2 {
       height: 5.1em;
     #update{
       font-size: 1.6em;
-      width: 37.31em;
       height: 100%;
+      width: 42.34%;
       padding:  0 2em;
       border: none;
       color: #898989;
@@ -433,8 +440,8 @@ h2 {
     #submit{
       font-size: 1.6em;
       font-weight: 700;
-      width: 8.44em;
       height: 100%;
+      width: 9.57%;
       border: none;
       text-transform: uppercase;
       color: #000000;
@@ -443,16 +450,15 @@ h2 {
   }
     .footer-widjet {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       .footer-cart {
         font-size: 1.6em;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 4.75em;
-        margin-right: 5em;
-        justify-content: start;
+        justify-content: space-between;
         &:first-child {
-          width: 11.3em;
         }
         &:last-child {
           margin: 0;
