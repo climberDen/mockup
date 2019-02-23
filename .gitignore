@@ -1,5 +1,0 @@
-#Исключим директорию __node_modules__ :
-node_modules/
-#Исключим сам файл .gitignore:
-.gitignore
-*.css
