@@ -1,2 +1,4 @@
-node_modules;
-.css
+#Исключим директорию __node_modules__ :
+__node_modules__/
+#Исключим сам файл .gitignore:
+.gitignore
