@@ -35,6 +35,8 @@ p{
 .row1{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 // style for header----------------
 #header {
@@ -85,7 +87,6 @@ p{
       font-weight: 700;
     }
     p {
-      width: 23.75em;
       font-size: 2em;
       margin-bottom: 2.05em;
     }
@@ -115,7 +116,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     .card {
-      width: 29%;
+      width: 25em;
       margin-right: 5em;
 
       .glyph_card {
@@ -150,7 +151,7 @@ p{
     justify-content: space-around;
     padding: 0 5em;
     .card2 {
-      width: 30%;
+      width: 20em;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -216,6 +217,7 @@ p{
     flex-direction: column;
     align-items: center;
     margin-right: 2em;
+    margin-bottom: 2em;
     .img {
       display: flex;
       align-items: flex-end;
@@ -259,13 +261,13 @@ p{
 // our_team
 #our_team {
   width: 66.8%;
-  margin: 26.4em auto 0 auto;
+  margin: 24.4em auto 0 auto;
   .row1 {
     margin: 7.6em auto 0 auto;
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     .card4 {
       width: 16.3em;
+      margin-bottom: 2em;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -300,15 +302,18 @@ p{
 }
 // stats
 #stats {
-  margin: 21.5em auto 0 auto;
+  margin: 19.5em auto 0 auto;
   width: 50.64%;
-  .row {
+  .row1 {
     margin-top: 5.6em;
-    display: flex;
     justify-content: space-around;
     .card5 {
       display: flex;
       flex-direction: column;
+      margin-right: 2em;
+      &:last-child{
+        margin-right: 0;
+      }
       i {
         font-size: 4.8em;
       }
@@ -341,6 +346,7 @@ p{
     color: #898989;
     font-size: 2em;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     i {
       &:last-child {
@@ -348,7 +354,7 @@ p{
       }
     }
     p {
-      padding: 0 2.8em;
+      padding: 0;
     }
   }
 }
@@ -356,9 +362,8 @@ p{
 #follow {
   margin: 21.4em auto 0 auto;
   width: 50.64%;
-  .row {
+  .row1 {
     margin-top: 4.9em;
-    display: flex;
     justify-content: space-around;
     .card6 {
       width: 15.9em;
@@ -419,11 +424,8 @@ p{
   color: #fff;
   .footer {
     padding-top: 9.6em;
-    width: 60.14%;
+    width: 66.8%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     }
     .input{
       margin: 4em auto 11.5em auto;
@@ -451,14 +453,17 @@ p{
     .footer-widjet {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       .footer-cart {
+        margin-right: 4em;
+        flex-grow: 1;
         font-size: 1.6em;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
         &:first-child {
+          flex-grow: 2;
+          width: min-content;
         }
         &:last-child {
           margin: 0;

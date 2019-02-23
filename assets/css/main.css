@@ -34,6 +34,8 @@ p {
 .row1 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 #header {
   width: 100%;
@@ -84,7 +86,6 @@ p {
   font-weight: 700;
 }
 #header .headline p {
-  width: 23.75em;
   font-size: 2em;
   margin-bottom: 2.05em;
 }
@@ -110,7 +111,7 @@ p {
   flex-wrap: wrap;
 }
 #tinyone_features .row1 .card {
-  width: 29%;
+  width: 25em;
   margin-right: 5em;
 }
 #tinyone_features .row1 .card .glyph_card {
@@ -141,7 +142,7 @@ p {
   padding: 0 5em;
 }
 #pricing .row1 .card2 {
-  width: 30%;
+  width: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,6 +206,7 @@ p {
   flex-direction: column;
   align-items: center;
   margin-right: 2em;
+  margin-bottom: 2em;
 }
 #our_works .card3 .img {
   display: flex;
@@ -243,15 +245,15 @@ p {
 }
 #our_team {
   width: 66.8%;
-  margin: 26.4em auto 0 auto;
+  margin: 24.4em auto 0 auto;
 }
 #our_team .row1 {
   margin: 7.6em auto 0 auto;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #our_team .row1 .card4 {
   width: 16.3em;
+  margin-bottom: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,26 +283,29 @@ p {
   margin: 0;
 }
 #stats {
-  margin: 21.5em auto 0 auto;
+  margin: 19.5em auto 0 auto;
   width: 50.64%;
 }
-#stats .row {
+#stats .row1 {
   margin-top: 5.6em;
-  display: flex;
   justify-content: space-around;
 }
-#stats .row .card5 {
+#stats .row1 .card5 {
   display: flex;
   flex-direction: column;
+  margin-right: 2em;
 }
-#stats .row .card5 i {
+#stats .row1 .card5:last-child {
+  margin-right: 0;
+}
+#stats .row1 .card5 i {
   font-size: 4.8em;
 }
-#stats .row .card5 h4 {
+#stats .row1 .card5 h4 {
   font-size: 2.4em;
   margin-bottom: 0;
 }
-#stats .row .card5 p {
+#stats .row1 .card5 p {
   color: #898989;
   font-size: 1.6em;
   margin: 0;
@@ -323,36 +328,36 @@ p {
   color: #898989;
   font-size: 2em;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 #stats .quote i:last-child {
   align-self: flex-end;
 }
 #stats .quote p {
-  padding: 0 2.8em;
+  padding: 0;
 }
 #follow {
   margin: 21.4em auto 0 auto;
   width: 50.64%;
 }
-#follow .row {
+#follow .row1 {
   margin-top: 4.9em;
-  display: flex;
   justify-content: space-around;
 }
-#follow .row .card6 {
+#follow .row1 .card6 {
   width: 15.9em;
   display: flex;
   flex-direction: column;
 }
-#follow .row .card6 i {
+#follow .row1 .card6 i {
   font-size: 2.2em;
 }
-#follow .row .card6 h3 {
+#follow .row1 .card6 h3 {
   font-size: 2.4em;
   margin: 1em 0 0 0;
 }
-#follow .row .card6 p {
+#follow .row1 .card6 p {
   color: #898989;
   font-size: 1.6em;
   margin: 0;
@@ -397,11 +402,8 @@ p {
 }
 #footer .footer {
   padding-top: 9.6em;
-  width: 60.14%;
+  width: 66.8%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 #footer .input {
   margin: 4em auto 11.5em auto;
@@ -428,14 +430,19 @@ p {
 #footer .footer-widjet {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #footer .footer-widjet .footer-cart {
+  margin-right: 4em;
+  flex-grow: 1;
   font-size: 1.6em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+}
+#footer .footer-widjet .footer-cart:first-child {
+  flex-grow: 2;
+  width: min-content;
 }
 #footer .footer-widjet .footer-cart:last-child {
   margin: 0;
